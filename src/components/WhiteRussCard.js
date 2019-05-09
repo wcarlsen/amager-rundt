@@ -17,7 +17,7 @@ const styles = {
     marginBottom: 15,
   },
   media: {
-    height: isMobile ? 500 : 750,
+    height: isMobile ? 400 : 750,
   },
   content: {
     paddingBottom: 100

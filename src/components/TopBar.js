@@ -79,6 +79,36 @@ class TopBar extends React.Component {
             </ListItemIcon>
             <ListItemText primary="White Russian" />
           </ListItem>
+          <ListItem onClick={() => this.props.changeContent("junglebird")} button key="junglebird">
+            <ListItemIcon>
+              🍸
+            </ListItemIcon>
+            <ListItemText primary="Jungle Bird" />
+          </ListItem>
+          <ListItem onClick={() => this.props.changeContent("jaegerbomb")} button key="jaegerbomb">
+            <ListItemIcon>
+              🥃
+            </ListItemIcon>
+            <ListItemText primary="Jäger Bomb" />
+          </ListItem>
+          <ListItem onClick={() => this.props.changeContent("gintonic")} button key="gintonic">
+            <ListItemIcon>
+              🍸
+            </ListItemIcon>
+            <ListItemText primary="Gin and Tonic" />
+          </ListItem>
+          <ListItem onClick={() => this.props.changeContent("darkginger")} button key="darkginger">
+            <ListItemIcon>
+              🍸
+            </ListItemIcon>
+            <ListItemText primary="Dark and Ginger" />
+          </ListItem>
+          <ListItem onClick={() => this.props.changeContent("margarita")} button key="margarita">
+            <ListItemIcon>
+              🍸
+            </ListItemIcon>
+            <ListItemText primary="Margarita" />
+          </ListItem>
         </List>
       </div>
     );

@@ -7,6 +7,11 @@ import OelCard from './components/OelCard';
 import GinHassCard from './components/GinHassCard';
 import BrambleCard from './components/BrambleCard';
 import WhiteRussCard from './components/WhiteRussCard';
+import JungleBirdCard from './components/JungleBirdCard';
+import JaegerBombCard from './components/JaegerBombCard';
+import GinTonicCard from './components/GinTonicCard';
+import DarkGingerCard from './components/DarkGingerCard';
+import MargaritaCard from './components/MargaritaCard';
 
 const theme = createMuiTheme({
   palette: {
@@ -45,6 +50,21 @@ class App extends Component {
           break;
         case "whiteruss":
           contentComponent = <WhiteRussCard/>;
+          break;
+        case "junglebird":
+          contentComponent = <JungleBirdCard/>;
+          break;
+        case "jaegerbomb":
+          contentComponent = <JaegerBombCard/>;
+          break;
+        case "gintonic":
+          contentComponent = <GinTonicCard/>;
+          break;
+        case "darkginger":
+          contentComponent = <DarkGingerCard/>;
+          break;
+        case "margarita":
+          contentComponent = <MargaritaCard/>;
           break;
       default:
         contentComponent = <HomeCard/>;

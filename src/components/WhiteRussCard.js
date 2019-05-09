@@ -40,9 +40,9 @@ function WhiteRussCard(props) {
           </Typography>
           <Typography component="p">
             <ul>
-              <li>4 CL Vodka</li>
-              <li>2.5 CL Kahlúa</li>
-              <li>2 CL fløde</li>
+              <li>4 cL Vodka</li>
+              <li>2.5 cL Kahlúa</li>
+              <li>2 cL fløde</li>
               <li>Isterninger</li>
             </ul>
           </Typography>

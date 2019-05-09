@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import GinHass from './../assets/images/gin_hass.png';
+import Jaeger from './../assets/images/jaeger.png';
 
 const isMobile = window.innerWidth <= 500;
 
@@ -24,26 +24,24 @@ const styles = {
   }
 };
 
-function GinHassCard(props) {
+function JaegerBombCard(props) {
   const { classes } = props;
   return (
     <Grid container justify='center'>
       <Card className={classes.card} elevation={5} >
         <CardMedia
           className={classes.media}
-          image={GinHass}
+          image={Jaeger}
           title="Contemplative Reptile"
         />
         <CardContent className={classes.content}>
           <Typography gutterBottom variant="h5" component="h2">
-            Gin Hass
+            Jäger Bomb
           </Typography>
           <Typography component="p">
             <ul>
-              <li>4 cL Hendricks Gin</li>
-              <li>10 cL Lemon sodavand</li>
-              <li>2 cL Mango sirup</li>
-              <li>Isterninger</li>
+              <li>2 cL Jägermeister</li>
+              <li>6 cL Energidrink</li>
             </ul>
           </Typography>
         </CardContent>
@@ -52,8 +50,8 @@ function GinHassCard(props) {
   );
 }
 
-GinHassCard.propTypes = {
+JaegerBombCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(GinHassCard);
+export default withStyles(styles)(JaegerBombCard);

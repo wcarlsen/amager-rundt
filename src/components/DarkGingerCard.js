@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import GinHass from './../assets/images/gin_hass.png';
+import DarkGinger from './../assets/images/darkginger.png';
 
 const isMobile = window.innerWidth <= 500;
 
@@ -24,26 +24,28 @@ const styles = {
   }
 };
 
-function GinHassCard(props) {
+function DarkGingerCard(props) {
   const { classes } = props;
   return (
     <Grid container justify='center'>
       <Card className={classes.card} elevation={5} >
         <CardMedia
           className={classes.media}
-          image={GinHass}
+          image={DarkGinger}
           title="Contemplative Reptile"
         />
         <CardContent className={classes.content}>
           <Typography gutterBottom variant="h5" component="h2">
-            Gin Hass
+            Dark and ginger
           </Typography>
           <Typography component="p">
             <ul>
-              <li>4 cL Hendricks Gin</li>
-              <li>10 cL Lemon sodavand</li>
-              <li>2 cL Mango sirup</li>
+              <li>5 cL Havana Club rom</li>
+              <li>2 skvæt Angostura bitter</li>
+              <li>1 cL Melasessesirup</li>
+              <li>2 cL Limesaft</li>
               <li>Isterninger</li>
+              <li>Toppes af med ginger beer</li>
             </ul>
           </Typography>
         </CardContent>
@@ -52,8 +54,8 @@ function GinHassCard(props) {
   );
 }
 
-GinHassCard.propTypes = {
+DarkGingerCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(GinHassCard);
+export default withStyles(styles)(DarkGingerCard);

@@ -40,10 +40,10 @@ function BrambleCard(props) {
           </Typography>
           <Typography component="p">
             <ul>
-              <li>5 CL Finsbury dry gin</li>
-              <li>1 CL Rose's sugar cane</li>
-              <li>1 CL Créme de mure</li>
-              <li>3 CL Citronsaft</li>
+              <li>5 cL Finsbury dry gin</li>
+              <li>1 cL Rose's sugar cane</li>
+              <li>1 cL Créme de mure</li>
+              <li>3 cL Citronsaft</li>
               <li>Isterninger</li>
             </ul>
           </Typography>

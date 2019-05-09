@@ -73,6 +73,12 @@ class TopBar extends React.Component {
             </ListItemIcon>
             <ListItemText primary="Bramble" />
           </ListItem>
+          <ListItem onClick={() => this.props.changeContent("whiteruss")} button key="witeruss">
+            <ListItemIcon>
+              🍸
+            </ListItemIcon>
+            <ListItemText primary="White Russian" />
+          </ListItem>
         </List>
       </div>
     );

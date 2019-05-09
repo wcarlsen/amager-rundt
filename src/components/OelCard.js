@@ -39,7 +39,9 @@ function OelCard(props) {
             Øl
           </Typography>
           <Typography component="p">
-            I år kan du nyde kolde pilsner.
+            <ul>
+              <li>Rigelige mængder kolde pilsner</li>
+            </ul>
           </Typography>
         </CardContent>
       </Card >

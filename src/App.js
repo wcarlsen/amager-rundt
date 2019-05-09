@@ -1,26 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
+import blue from '@material-ui/core/colors/blue';
+import TopBar from './components/TopBar';
+import HomeCard from './components/HomeCard';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const theme = createMuiTheme({
+  palette: {
+    primary: blue,
+  },
+  typography: {
+    useNextVariants: true,
+  },
+});
+
+class App extends Component {
+  state = {
+    content: "home",
+  };
+
+  changeContent = (contentName) => {
+    this.setState({ content: contentName });
+  };
+
+  render() {
+
+    let contentComponent;
+
+    switch (this.state.content) {
+      case "home":
+        contentComponent = <HomeCard/>;
+        break;
+      default:
+        contentComponent = <HomeCard/>;
+        break;
+    }
+
+    return (
+      <div className="App" >
+        <MuiThemeProvider theme={theme}>
+          <TopBar changeContent={this.changeContent} />
+          {contentComponent}
+        </MuiThemeProvider>
+      </div >
+    );
+  }
 }
 
 export default App;

@@ -36,7 +36,7 @@ function HomeCard(props) {
         />
         <CardContent className={classes.content}>
           <Typography gutterBottom variant="h5" component="h2">
-            Menukort
+            Info
           </Typography>
           <Typography component="p">
             Velkommen til dette års menukort for drinks på Amager rundt i jolle. Kig i burgermenuen oppe i venstre hjørne for at se, hvad der er på menuen i år.

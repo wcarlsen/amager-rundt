@@ -11,11 +11,6 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import Information from 'mdi-material-ui/Information';
-import FileDocument from 'mdi-material-ui/FileDocument';
-import Home from 'mdi-material-ui/Home';
-import Code from 'mdi-material-ui/CodeNotEqualVariant';
-import ListCheckbox from 'mdi-material-ui/FormatListCheckbox'
 
 
 const styles = {
@@ -56,33 +51,21 @@ class TopBar extends React.Component {
         <List>
           <ListItem onClick={() => this.props.changeContent("home")} button key="About me">
             <ListItemIcon>
-              <Information />
+            🛥️
             </ListItemIcon>
-            <ListItemText primary="Home" />
+            <ListItemText primary="Info" />
           </ListItem>
           <ListItem onClick={() => this.props.changeContent("oel")} button key="At home">
             <ListItemIcon>
-              <Home />
+              🍺
             </ListItemIcon>
             <ListItemText primary="Øl" />
           </ListItem>
-          <ListItem onClick={() => this.props.changeContent("work")} button key="At work">
+          <ListItem onClick={() => this.props.changeContent("oel")} button key="At home">
             <ListItemIcon>
-              <Code />
+              🍺
             </ListItemIcon>
-            <ListItemText primary="At work" />
-          </ListItem>
-          <ListItem onClick={() => this.props.changeContent("portfolio")} button key="Portfolio">
-            <ListItemIcon>
-              <ListCheckbox />
-            </ListItemIcon>
-            <ListItemText primary="Portfolio" />
-          </ListItem>
-          <ListItem onClick={() => this.props.changeContent("cv")} button key="CV">
-            <ListItemIcon>
-              <FileDocument />
-            </ListItemIcon>
-            <ListItemText primary="CV" />
+            <ListItemText primary="Øl" />
           </ListItem>
         </List>
       </div>

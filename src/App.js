@@ -4,6 +4,7 @@ import blue from '@material-ui/core/colors/blue';
 import TopBar from './components/TopBar';
 import HomeCard from './components/HomeCard';
 import OelCard from './components/OelCard';
+import GinHassCard from './components/GinHassCard';
 
 const theme = createMuiTheme({
   palette: {
@@ -33,6 +34,9 @@ class App extends Component {
         break;
         case "oel":
           contentComponent = <OelCard/>;
+          break;
+        case "ginhass":
+          contentComponent = <GinHassCard/>;
           break;
       default:
         contentComponent = <HomeCard/>;

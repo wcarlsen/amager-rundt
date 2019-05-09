@@ -51,7 +51,7 @@ class TopBar extends React.Component {
         <List>
           <ListItem onClick={() => this.props.changeContent("home")} button key="About me">
             <ListItemIcon>
-            🛥️
+              🛥️
             </ListItemIcon>
             <ListItemText primary="Info" />
           </ListItem>
@@ -61,11 +61,11 @@ class TopBar extends React.Component {
             </ListItemIcon>
             <ListItemText primary="Øl" />
           </ListItem>
-          <ListItem onClick={() => this.props.changeContent("oel")} button key="At home">
+          <ListItem onClick={() => this.props.changeContent("ginhass")} button key="At home">
             <ListItemIcon>
-              🍺
+              🍸
             </ListItemIcon>
-            <ListItemText primary="Øl" />
+            <ListItemText primary="Gin Hass" />
           </ListItem>
         </List>
       </div>

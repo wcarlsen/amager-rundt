@@ -6,40 +6,46 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import HomeImage from './../assets/images/home.jpg';
+import Bramble from './../assets/images/bramble.png';
 
 const isMobile = window.innerWidth <= 500;
 
 const styles = {
   card: {
     maxWidth: isMobile ? '100%' : '75%',
-    width: isMobile ? 'auto' : 800,
+    width: isMobile ? 400 : 800,
     marginBottom: 15,
   },
   media: {
-    height: isMobile ? 300 : 600,
+    height: isMobile ? 500 : 750,
   },
   content: {
     paddingBottom: 100
   }
 };
 
-function HomeCard(props) {
+function BrambleCard(props) {
   const { classes } = props;
   return (
     <Grid container justify='center'>
       <Card className={classes.card} elevation={5} >
         <CardMedia
           className={classes.media}
-          image={HomeImage}
+          image={Bramble}
           title="Contemplative Reptile"
         />
         <CardContent className={classes.content}>
           <Typography gutterBottom variant="h5" component="h2">
-            Menukort
+            Bramble
           </Typography>
           <Typography component="p">
-            Velkommen til dette års menukort for drinks på Amager rundt i jolle. Kig i burgermenuen oppe i venstre hjørne for at se, hvad der er på menuen i år.
+            <ul>
+              <li>5 CL Finsbury dry gin</li>
+              <li>1 CL Rose's sugar cane</li>
+              <li>1 CL Créme de mure</li>
+              <li>3 CL Citronsaft</li>
+              <li>Isterninger</li>
+            </ul>
           </Typography>
         </CardContent>
       </Card >
@@ -47,8 +53,8 @@ function HomeCard(props) {
   );
 }
 
-HomeCard.propTypes = {
+BrambleCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(HomeCard);
+export default withStyles(styles)(BrambleCard);

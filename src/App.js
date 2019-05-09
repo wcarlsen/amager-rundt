@@ -5,6 +5,7 @@ import TopBar from './components/TopBar';
 import HomeCard from './components/HomeCard';
 import OelCard from './components/OelCard';
 import GinHassCard from './components/GinHassCard';
+import BrambleCard from './components/BrambleCard';
 
 const theme = createMuiTheme({
   palette: {
@@ -37,6 +38,9 @@ class App extends Component {
           break;
         case "ginhass":
           contentComponent = <GinHassCard/>;
+          break;
+        case "bramble":
+          contentComponent = <BrambleCard/>;
           break;
       default:
         contentComponent = <HomeCard/>;

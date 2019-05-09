@@ -54,17 +54,17 @@ class TopBar extends React.Component {
     const sideList = (
       <div className={classes.list}>
         <List>
-          <ListItem onClick={() => this.props.changeContent("about")} button key="About me">
+          <ListItem onClick={() => this.props.changeContent("home")} button key="About me">
             <ListItemIcon>
               <Information />
             </ListItemIcon>
-            <ListItemText primary="About me" />
+            <ListItemText primary="Home" />
           </ListItem>
-          <ListItem onClick={() => this.props.changeContent("home")} button key="At home">
+          <ListItem onClick={() => this.props.changeContent("oel")} button key="At home">
             <ListItemIcon>
               <Home />
             </ListItemIcon>
-            <ListItemText primary="At home" />
+            <ListItemText primary="Øl" />
           </ListItem>
           <ListItem onClick={() => this.props.changeContent("work")} button key="At work">
             <ListItemIcon>

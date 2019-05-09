@@ -3,6 +3,7 @@ import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import blue from '@material-ui/core/colors/blue';
 import TopBar from './components/TopBar';
 import HomeCard from './components/HomeCard';
+import OelCard from './components/OelCard';
 
 const theme = createMuiTheme({
   palette: {
@@ -30,6 +31,9 @@ class App extends Component {
       case "home":
         contentComponent = <HomeCard/>;
         break;
+        case "oel":
+          contentComponent = <OelCard/>;
+          break;
       default:
         contentComponent = <HomeCard/>;
         break;

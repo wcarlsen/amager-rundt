@@ -12,6 +12,7 @@ import JaegerBombCard from './components/JaegerBombCard';
 import GinTonicCard from './components/GinTonicCard';
 import DarkGingerCard from './components/DarkGingerCard';
 import MargaritaCard from './components/MargaritaCard';
+import AlarmCard from './components/AlarmCard';
 
 const theme = createMuiTheme({
   palette: {
@@ -65,6 +66,9 @@ class App extends Component {
           break;
         case "margarita":
           contentComponent = <MargaritaCard/>;
+          break;
+        case "alarm":
+          contentComponent = <AlarmCard/>;
           break;
       default:
         contentComponent = <HomeCard/>;

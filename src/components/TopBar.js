@@ -100,6 +100,10 @@ class TopBar extends React.Component {
               <Emoji label="beer" symbol="🍸" />️
             <ListItemText primary="Margarita" />
           </ListItem>
+          <ListItem onClick={() => this.props.changeContent("alarm")} button key="alarm">
+              <Emoji label="sos" symbol="🆘" />️
+            <ListItemText primary="Mand over bord" />
+          </ListItem>
         </List>
       </div>
     );

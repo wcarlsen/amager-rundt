@@ -39,7 +39,7 @@ function HomeCard(props) {
             Info
           </Typography>
           <Typography component="div">
-            Velkommen til dette års menukort for drinks på Amager rundt i jolle. Kig i burgermenuen oppe i venstre hjørne for at se, hvad der er på menuen i år.
+            Velkommen til dette års Amager rundt i jolle ( . ) ( . ). Kig i burgermenuen oppe i venstre hjørne for at se, hvad der er på menuen i år og andre vigtige informationer.
           </Typography>
         </CardContent>
       </Card >

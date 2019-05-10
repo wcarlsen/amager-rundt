@@ -9,7 +9,6 @@ import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import Typography from '@material-ui/core/Typography';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
 
@@ -32,6 +31,18 @@ const styles = {
   },
 };
 
+const Emoji = props => (
+  <option
+    className="emoji"
+    role="img"
+    aria-label={props.label ? props.label : ""}
+    aria-hidden={props.label ? "false" : "true"}
+    value={props.label}
+  >
+    {props.symbol}
+  </option>
+)
+
 class TopBar extends React.Component {
   state = {
     left: false,
@@ -50,63 +61,43 @@ class TopBar extends React.Component {
       <div className={classes.list}>
         <List>
           <ListItem onClick={() => this.props.changeContent("home")} button key="About me">
-            <ListItemIcon>
-              🛥️
-            </ListItemIcon>
+              <Emoji label="boat" symbol="🛥" />️
             <ListItemText primary="Info" />
           </ListItem>
           <ListItem onClick={() => this.props.changeContent("oel")} button key="oel">
-            <ListItemIcon>
-              🍺
-            </ListItemIcon>
+            <Emoji label="beer" symbol="🍺" />️
             <ListItemText primary="Øl" />
           </ListItem>
           <ListItem onClick={() => this.props.changeContent("ginhass")} button key="ginhass">
-            <ListItemIcon>
-              🍸
-            </ListItemIcon>
+              <Emoji label="beer" symbol="🍸" />️
             <ListItemText primary="Gin Hass" />
           </ListItem>
           <ListItem onClick={() => this.props.changeContent("bramble")} button key="bramble">
-            <ListItemIcon>
-              🍸
-            </ListItemIcon>
+              <Emoji label="beer" symbol="🍸" />️
             <ListItemText primary="Bramble" />
           </ListItem>
           <ListItem onClick={() => this.props.changeContent("whiteruss")} button key="witeruss">
-            <ListItemIcon>
-              🍸
-            </ListItemIcon>
+              <Emoji label="beer" symbol="🍸" />️
             <ListItemText primary="White Russian" />
           </ListItem>
           <ListItem onClick={() => this.props.changeContent("junglebird")} button key="junglebird">
-            <ListItemIcon>
-              🍸
-            </ListItemIcon>
+              <Emoji label="beer" symbol="🍸" />️
             <ListItemText primary="Jungle Bird" />
           </ListItem>
           <ListItem onClick={() => this.props.changeContent("jaegerbomb")} button key="jaegerbomb">
-            <ListItemIcon>
-              🥃
-            </ListItemIcon>
+              <Emoji label="beer" symbol="🥃" />️
             <ListItemText primary="Jäger Bomb" />
           </ListItem>
           <ListItem onClick={() => this.props.changeContent("gintonic")} button key="gintonic">
-            <ListItemIcon>
-              🍸
-            </ListItemIcon>
+              <Emoji label="beer" symbol="🍸" />️
             <ListItemText primary="Gin and Tonic" />
           </ListItem>
           <ListItem onClick={() => this.props.changeContent("darkginger")} button key="darkginger">
-            <ListItemIcon>
-              🍸
-            </ListItemIcon>
+              <Emoji label="beer" symbol="🍸" />️
             <ListItemText primary="Dark and Ginger" />
           </ListItem>
           <ListItem onClick={() => this.props.changeContent("margarita")} button key="margarita">
-            <ListItemIcon>
-              🍸
-            </ListItemIcon>
+              <Emoji label="beer" symbol="🍸" />️
             <ListItemText primary="Margarita" />
           </ListItem>
         </List>
@@ -131,7 +122,7 @@ class TopBar extends React.Component {
               </div>
             </SwipeableDrawer>
             <Typography variant="h6" color="inherit" className={classes.grow}>
-              Amager rundt i jolle ( . ) ( . )
+              Amager rundt ( . ) ( . )
             </Typography>
           </Toolbar>
         </AppBar>

@@ -38,7 +38,7 @@ function HomeCard(props) {
           <Typography gutterBottom variant="h5" component="h2">
             Info
           </Typography>
-          <Typography component="p">
+          <Typography component="div">
             Velkommen til dette års menukort for drinks på Amager rundt i jolle. Kig i burgermenuen oppe i venstre hjørne for at se, hvad der er på menuen i år.
           </Typography>
         </CardContent>

@@ -75,7 +75,9 @@ class App extends Component {
       <div className="App" >
         <MuiThemeProvider theme={theme}>
           <TopBar changeContent={this.changeContent} />
-          {contentComponent}
+          <div>
+            {contentComponent}
+          </div>
         </MuiThemeProvider>
       </div >
     );

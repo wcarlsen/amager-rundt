@@ -38,7 +38,7 @@ function JaegerBombCard(props) {
           <Typography gutterBottom variant="h5" component="h2">
             Jäger Bomb
           </Typography>
-          <Typography component="p">
+          <Typography component="div">
             <ul>
               <li>2 cL Jägermeister</li>
               <li>6 cL Energidrink</li>

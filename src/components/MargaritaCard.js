@@ -38,7 +38,7 @@ function MargaritaCard(props) {
           <Typography gutterBottom variant="h5" component="h2">
             Margarita
           </Typography>
-          <Typography component="p">
+          <Typography component="div">
             <ul>
               <li>5 cL Tequila</li>
               <li>2.5 cL Agavesirup</li>

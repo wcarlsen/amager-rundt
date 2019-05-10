@@ -38,7 +38,7 @@ function BrambleCard(props) {
           <Typography gutterBottom variant="h5" component="h2">
             Bramble
           </Typography>
-          <Typography component="p">
+          <Typography component="div">
             <ul>
               <li>5 cL Gin</li>
               <li>1 cL Rose's sugar cane</li>

@@ -38,7 +38,7 @@ function JungleBirdCard(props) {
           <Typography gutterBottom variant="h5" component="h2">
             Jungle Bird
           </Typography>
-          <Typography component="p">
+          <Typography component="div">
             <ul>
               <li>4.5 cL Mørk rom</li>
               <li>2.5 cL Campari</li>

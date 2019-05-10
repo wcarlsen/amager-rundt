@@ -38,7 +38,7 @@ function DarkGingerCard(props) {
           <Typography gutterBottom variant="h5" component="h2">
             Dark and ginger
           </Typography>
-          <Typography component="p">
+          <Typography component="div">
             <ul>
               <li>5 cL Mørk rom</li>
               <li>2 skvæt Angostura bitter</li>

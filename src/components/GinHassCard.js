@@ -38,7 +38,7 @@ function GinHassCard(props) {
           <Typography gutterBottom variant="h5" component="h2">
             Gin Hass
           </Typography>
-          <Typography component="p">
+          <Typography component="div">
             <ul>
               <li>4 cL Gin</li>
               <li>10 cL Lemon sodavand</li>

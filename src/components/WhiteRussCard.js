@@ -38,7 +38,7 @@ function WhiteRussCard(props) {
           <Typography gutterBottom variant="h5" component="h2">
             White Russian
           </Typography>
-          <Typography component="p">
+          <Typography component="div">
             <ul>
               <li>4 cL Vodka</li>
               <li>2.5 cL Kahlúa</li>

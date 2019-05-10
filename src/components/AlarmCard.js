@@ -40,7 +40,9 @@ function AlarmCard(props) {
           </Typography>
           <Typography component="div">
             <ul>
-              <li>Glem ham og sejl videre</li>
+              <li>Glem ham</li>
+              <li>Sejl videre</li>
+              <li>Snak ikke mere om det</li>
             </ul>
           </Typography>
         </CardContent>

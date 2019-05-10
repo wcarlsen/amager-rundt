@@ -40,7 +40,7 @@ function GinHassCard(props) {
           </Typography>
           <Typography component="p">
             <ul>
-              <li>4 cL Hendricks Gin</li>
+              <li>4 cL Gin</li>
               <li>10 cL Lemon sodavand</li>
               <li>2 cL Mango sirup</li>
               <li>Isterninger</li>

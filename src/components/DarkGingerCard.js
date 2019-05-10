@@ -40,7 +40,7 @@ function DarkGingerCard(props) {
           </Typography>
           <Typography component="p">
             <ul>
-              <li>5 cL Havana Club rom</li>
+              <li>5 cL Mørk rom</li>
               <li>2 skvæt Angostura bitter</li>
               <li>1 cL Melasessesirup</li>
               <li>2 cL Limesaft</li>

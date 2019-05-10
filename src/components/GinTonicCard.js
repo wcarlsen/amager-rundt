@@ -41,7 +41,7 @@ function GinTonicCard(props) {
             <ul>
               <li>4 cL Gin</li>
               <li>10 cL Tonic</li>
-              <li>1 skice citron</li>
+              <li>1 skive citron</li>
               <li>Isterninger</li>
             </ul>
           </Typography>

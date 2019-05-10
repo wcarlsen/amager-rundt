@@ -64,6 +64,18 @@ class TopBar extends React.Component {
               <Emoji label="boat" symbol="🛥" />️
             <ListItemText primary="Info" />
           </ListItem>
+          <ListItem onClick={() => this.props.changeContent("captain")} button key="captain">
+              <Emoji label="captain" symbol="🎖️" />️
+            <ListItemText primary="Din kaptajn" />
+          </ListItem>
+          <ListItem onClick={() => this.props.changeContent("alarm")} button key="alarm">
+              <Emoji label="sos" symbol="🆘" />️
+            <ListItemText primary="Mand over bord" />
+          </ListItem>
+          <ListItem onClick={() => this.props.changeContent("map")} button key="map">
+              <Emoji label="sos" symbol="🗺️" />️
+            <ListItemText primary="Kort" />
+          </ListItem>
           <ListItem onClick={() => this.props.changeContent("oel")} button key="oel">
             <Emoji label="beer" symbol="🍺" />️
             <ListItemText primary="Øl" />
@@ -99,10 +111,6 @@ class TopBar extends React.Component {
           <ListItem onClick={() => this.props.changeContent("margarita")} button key="margarita">
               <Emoji label="beer" symbol="🍸" />️
             <ListItemText primary="Margarita" />
-          </ListItem>
-          <ListItem onClick={() => this.props.changeContent("alarm")} button key="alarm">
-              <Emoji label="sos" symbol="🆘" />️
-            <ListItemText primary="Mand over bord" />
           </ListItem>
         </List>
       </div>

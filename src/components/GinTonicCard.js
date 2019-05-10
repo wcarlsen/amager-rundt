@@ -5,7 +5,7 @@ import Card from '@material-ui/core/Card'; import CardContent from '@material-ui
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import GT from './../assets/images/gt.png';
+import GT from './../assets/images/gt.jpg';
 
 const isMobile = window.innerWidth <= 500;
 

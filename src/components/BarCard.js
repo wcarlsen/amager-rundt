@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import JungleBird from './../assets/images/jungle.jpg';
+import Bar from './../assets/images/bar.png';
 
 const isMobile = window.innerWidth <= 500;
 
@@ -24,29 +24,22 @@ const styles = {
   }
 };
 
-function JungleBirdCard(props) {
+function BarCard(props) {
   const { classes } = props;
   return (
     <Grid container justify='center'>
       <Card className={classes.card} elevation={5} >
         <CardMedia
           className={classes.media}
-          image={JungleBird}
+          image={Bar}
           title="Contemplative Reptile"
         />
         <CardContent className={classes.content}>
           <Typography gutterBottom variant="h5" component="h2">
-            Jungle Bird
+            Bartendere
           </Typography>
           <Typography component="div">
-            <ul>
-              <li>4.5 cL Mørk rom</li>
-              <li>2.5 cL Campari</li>
-              <li>1.5 cL Sukkerlage</li>
-              <li>4.5 cL Ananasjuice</li>
-              <li>1.5 cL Limejuice</li>
-              <li>Isterninger</li>
-            </ul>
+            Janek Nilsson og Martin Køhlert har plyndret Netto på Amagerbrogade og skænker overskuddet af høsten, så vi andre kan få det vildere end vildt
           </Typography>
         </CardContent>
       </Card >
@@ -54,8 +47,8 @@ function JungleBirdCard(props) {
   );
 }
 
-JungleBirdCard.propTypes = {
+BarCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(JungleBirdCard);
+export default withStyles(styles)(BarCard);

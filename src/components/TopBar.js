@@ -68,6 +68,14 @@ class TopBar extends React.Component {
               <Emoji label="captain" symbol="🎖️" />️
             <ListItemText primary="Din kaptajn" />
           </ListItem>
+          <ListItem onClick={() => this.props.changeContent("bar")} button key="bar">
+              <Emoji label="bar" symbol="🍹" />️
+            <ListItemText primary="Bartendere" />
+          </ListItem>
+          <ListItem onClick={() => this.props.changeContent("fun")} button key="fun">
+              <Emoji label="fun" symbol="⛑️" />️
+            <ListItemText primary="Sikkerhedrepræsentant" />
+          </ListItem>
           <ListItem onClick={() => this.props.changeContent("alarm")} button key="alarm">
               <Emoji label="sos" symbol="🆘" />️
             <ListItemText primary="Mand over bord" />

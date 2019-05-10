@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import JungleBird from './../assets/images/jungle.jpg';
+import Assistant from './../assets/images/assistant.png';
 
 const isMobile = window.innerWidth <= 500;
 
@@ -24,29 +24,22 @@ const styles = {
   }
 };
 
-function JungleBirdCard(props) {
+function AssistantCard(props) {
   const { classes } = props;
   return (
     <Grid container justify='center'>
       <Card className={classes.card} elevation={5} >
         <CardMedia
           className={classes.media}
-          image={JungleBird}
+          image={Assistant}
           title="Contemplative Reptile"
         />
         <CardContent className={classes.content}>
           <Typography gutterBottom variant="h5" component="h2">
-            Jungle Bird
+            Sikkerhedsrepræsentant
           </Typography>
           <Typography component="div">
-            <ul>
-              <li>4.5 cL Mørk rom</li>
-              <li>2.5 cL Campari</li>
-              <li>1.5 cL Sukkerlage</li>
-              <li>4.5 cL Ananasjuice</li>
-              <li>1.5 cL Limejuice</li>
-              <li>Isterninger</li>
-            </ul>
+            Casper Holmegaard Nielsen er sikkerheden selv
           </Typography>
         </CardContent>
       </Card >
@@ -54,8 +47,8 @@ function JungleBirdCard(props) {
   );
 }
 
-JungleBirdCard.propTypes = {
+AssistantCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(JungleBirdCard);
+export default withStyles(styles)(AssistantCard);
